@@ -46,13 +46,15 @@ table {
     border-spacing: 0;
     
 }
-
-*{
-    background-color: #020659;
+/*universal level elements*/
+html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-/*inline elements*/
+    background-color: #020659;
+    margin-left:80px;
+    margin-right: 80px;
 }
+
+/*inline level elements*/
 h1 {font-size:1.25em;
     color: #ffffff;
 }
@@ -64,7 +66,7 @@ h1 a{
     text-transform: capitalize;
     font-size:1.75em;
 }
-#h1_cap{
+.h1_cap{
     font-weight:bold;
     text-transform: uppercase;
     font-size:.55em;
@@ -79,11 +81,30 @@ h2 {
     color: #590242;
     font-weight: bolder;
 }
+#bio_h2{
+    font-size: 1.5em;
+    color:#ffffff;
+    font-weight: bolder;
+}
+#bio{
+ background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(3,8,172,1) 35%, rgba(3,8,172,1) 100%);
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+padding-right: 20px;
+}
 p{
     color: #ffffff;
     font-size: .75em;
 }
+#crfoot{
+    text-align: center;
+    margin: 0 auto;
+    color: #590242;
+}
 div dl{
+    
     color: #ffffff;
     font-size: 1em;
 }
@@ -91,37 +112,57 @@ div dl{
     color: #590242;
     font-size: 1em;
 }
+/*block level elements*/
+header{
+    background-color: #020873;
+}
+footer{
+    background-color: #ffffff;
+}
+#trending{
+    background-color: #ffffff;
+    margin-bottom:20px;
+}
 
-
-
-
-
-/*button display*/
+#your_playlists{
+    background-color: #0d8dfb;
+    margin-top: 60px;
+}
+#curated_playlists{
+    background-color: #020873;
+    margin-top: 60px;
+    }
+#allplaylists{
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+/*button display*/  
 .button {
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    background-color: #3c5d6e;
+    background-color: #590242;
     border-radius: 6px;
     outline: none;
-    transition: 0.3s;
+    transition: 0.1s;
     border: 2px solid transparent;
   }
   .button:hover,
   .button:focus {
-    background-color: #c2c7c7;
+    background-color: #0d8df8;
     border-color: #7aa8b7;
   }
 
 
 /*menu (start media queries)*/
-
+@media screen and (min-width:375px) {
 ul {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    text-decoration: none;
 }
 label {
     cursor: pointer;
@@ -170,6 +211,7 @@ input:checked ~ label span:after {
 }
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
+}
 }
 @media screen and (min-width:834px) {
     ul {

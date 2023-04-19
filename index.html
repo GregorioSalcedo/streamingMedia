@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1><a href="index.html"> M<span id="h1_cap">uzak</span>M<span id="h1_cap">aker</span> </a></h1>
+      <h1><a href="index.html"> M<span class="h1_cap">uzak</span>M<span class="h1_cap">aker</span> </a></h1>
       <nav>
         <ul class="menu">
           <li><a href="trending_Songs.html">Trending Songs</a></li>
@@ -19,12 +19,12 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h2>Smooth Jazz</h2>
-          <p>The station is dedicated to the soothing sounds of smooth jazz.
+      <section id="bio">
+        <h2 id="bio_h2">Smooth Jazz</h2>
+        <p>The station is dedicated to the soothing sounds of smooth jazz.
           This genre of commercially oriented crossover jazz became domininant
           in the 1980's and early 1990's.
-          </p> 
+        </p> 
         </section>
         <section id="trending">
           <h2>Trending Songs</h2>
@@ -87,7 +87,7 @@
           </section>
           <section>
             <div>
-              <h3>Smoothies</h3>
+              <h3>Success</h3>
               <dl>
                 <dt>Artist</dt>
                 <dd>Maesta</dd>
@@ -101,10 +101,11 @@
           </section>
           </div>
       </section>
-      <section id="playlists">
+      <div id="allplaylists">
         <a class="button" href="#"><span>More Trending</span></a>
-        <h2>Your Playlists</h2>
-        <div class="scroll">
+         <section id="your_playlists">
+         <h2>Your Playlists</h2>
+          <div class="scroll">
             <div>
               <dl>
                 <dt>Best of 2020</dt>
@@ -141,11 +142,10 @@
               <img src="images/smooth-study-cover.png" alt="student using laptop picture">
             </div>
         </div>
-        <a class="button" href="#"><span>All your playlists</span></a>
       </section>
 
-
-      <section id="playlists">
+    
+      <section id="curated_playlists">
         <h2>Curated Playlists</h2>
         <div class="scroll">
             <div>
@@ -184,11 +184,13 @@
               <img src="images/smooth-saxophone-cover.png" alt="2020 fire graphic">
             </div>
         </div>
-        <a class="button" href="#"><span>More Curated</span></a>
       </section>
+      <a class="button" href="#"><span>All your playlists</span></a>
+      <a class="button" href="#"><span>More Curated</span></a>
+    </div>
     </main>
     <footer>
-        <p>&copy;2022 Smooth Jazz</p>
+        <p id="crfoot">&copy;2022 Smooth Jazz</p>
     </footer>
   </body>
 </html>
