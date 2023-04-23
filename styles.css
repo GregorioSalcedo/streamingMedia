@@ -85,14 +85,15 @@ h2 {
     font-size: 1.5em;
     color:#ffffff;
     font-weight: bolder;
+    
 }
 #bio{
- background: rgb(2,0,36);
-background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(3,8,172,1) 35%, rgba(3,8,172,1) 100%);
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 20px;
-padding-right: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(3,8,172,1) 35%, rgba(3,8,172,1) 100%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 p{
     color: #ffffff;
@@ -100,7 +101,6 @@ p{
 }
 #crfoot{
     text-align: center;
-    margin: 0 auto;
     color: #590242;
 }
 div dl{
@@ -115,6 +115,7 @@ div dl{
 /*block level elements*/
 header{
     background-color: #020873;
+    text-align: center;
 }
 footer{
     background-color: #ffffff;
