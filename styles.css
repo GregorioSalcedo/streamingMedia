@@ -52,6 +52,7 @@ html{
     background-color: #020659;
     margin-left:80px;
     margin-right: 80px;
+
 }
 
 /*inline level elements*/
@@ -116,6 +117,10 @@ div dl{
 header{
     background-color: #020873;
     text-align: center;
+    box-shadow: 1px 1px 4px 0 rgb(0, 0, 0);
+        position: relative;
+        width: 100%;
+        z-index: 3;
 }
 footer{
     background-color: #ffffff;
@@ -156,63 +161,104 @@ footer{
     border-color: #7aa8b7;
   }
 
-
+ 
 /*menu (start media queries)*/
 @media screen and (min-width:375px) {
-ul {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    text-decoration: none;
-}
-label {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-label span {
-    background-color: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
-}
-label span:before, label span:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-label span:before {
-    top: 5px;
-}
-label span:after {
-    top: -5px;
-}
-input {
-    display: none;
-}
-input:checked ~ ul {
-    max-height: 500px;
-}
-input:checked ~ label span {
-    background: transparent;
-}
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
+  
+      .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      
+      .header li a {
+        display: block;
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4;
+        text-decoration: none;
+      }
+      
+      .header li a:hover,
+      .header .menu-btn:hover {
+        background-color: #5f66b7;
+      }
+      
+      .header .logo {
+        float: right;
+        font-size: 2em;
+        padding: 10px 70px 10px 10px;
+        text-decoration: none;
+      }
+      .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+      }
+
+      .header .menu-icon {
+        cursor: pointer;
+        float: left;
+        padding: 28px 20px;
+        position:relative;
+        user-select: none;
+      }
+      
+      .header .menu-icon .navicon {
+        background: rgb(255, 255, 255);
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
+      
+      .header .menu-icon .navicon:before,
+      .header .menu-icon .navicon:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+      
+      .header .menu-icon .navicon:before {
+        top: 5px;
+      }
+      
+      .header .menu-icon .navicon:after {
+        top: -5px;
+      }
+      
+      /* menu btn */
+      
+      .header .menu-btn {
+        display: none;
+      }
+      
+      .header .menu-btn:checked ~ .menu {
+        max-height: 240px;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
 }
 @media screen and (min-width:834px) {
     ul {
