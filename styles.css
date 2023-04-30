@@ -105,13 +105,74 @@ p{
     color: #590242;
 }
 div dl{
-    
     color: #ffffff;
     font-size: 1em;
 }
 #trending div dl{
     color: #590242;
     font-size: 1em;
+    background-color:hsl(208, 28%, 82%)
+}
+#trending div h3{
+    background-color:hsl(208, 28%, 82%)
+}
+#trending div{
+    top: 351px;
+    background-color: #ffffff;
+    
+}
+#trending h2{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    background-color: #ffffff;
+    
+}
+.scroll{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+.scroll section{
+    margin: 10px;
+    position:relative;
+
+}
+.scroll div{
+    position: relative;
+  
+    color: #590242;
+    font-size: 1em;
+    height: 50px;
+    width: 311px;
+
+    
+}
+div {
+    color: #590242;
+    font-size: 1em;
+   
+}
+
+dl{
+    padding-right: 5px;
+}
+dt{
+    display: relative;
+}
+audio{
+    position: relative;
+    bottom: 150px;
+    left: 5px;
+}
+
+ #trending{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 3;
+    
 }
 /*block level elements*/
 header{
@@ -263,10 +324,10 @@ footer{
 @media screen and (min-width:834px) {
     ul {
         overflow: visible;
-        position: absolute;
+        position: relative;
         top: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1f;
     }
     label span, input {
         display: none;
