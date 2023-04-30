@@ -336,13 +336,13 @@ footer{
   }
   .button:hover,
   .button:focus {
-    background-color: #0d8df8;
+    background-color: #020659;
     border-color: #7aa8b7;
   }
 
  
 /*menu (start media queries)*/
-@media screen and (min-width:375px) {
+@media screen and (min-width:375px) and (max-width:834px) {
   
       .header ul {
         margin: 0;
@@ -440,14 +440,44 @@ footer{
       }
 }
 @media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: relative;
-        top: 0;
+   
+      nav a {
+        text-decoration:none;
+       display: block;
+       nav-right: auto;
+        text-align:right;
+        color:#E3F2FD;
+        text-transform:uppercase;
+        font-weight:bold;
+        font-size:.75em;
+        margin:10px;
+        padding:20px;
+      }
+      nav a:hover {
+        background-color:#590242;
+        color:#ffffff;
+        border-radius: 10px;
+      }
+      nav{
+        margin-left: 250px;
+      }
+    .header h1{
+        
+        text-align:left;
+        color:#E3F2FD;
+        font-size:1.5em;
+        margin:10px;
+        padding:10px;
+        grid-column-start: 1;
+        float: left;
+    }
+    nav ul{
         display: grid;
-        grid-template-columns: 1fr 1fr 1f;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
     }
-    label span, input {
-        display: none;
-    }
+   .menu-btn{
+    visibility:collapse;
+   }
+   
 }
