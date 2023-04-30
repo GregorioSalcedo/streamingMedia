@@ -103,6 +103,8 @@ p{
 #crfoot{
     text-align: center;
     color: #590242;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 div dl{
     color: #ffffff;
@@ -133,7 +135,7 @@ div dl{
 #your_playlists section{
     position:relative;
 
-    background-color:#04579c;
+    background-color:#1186e6;
     margin: -1em 5px;
     border-radius: 10%;
     align-items: center;
@@ -174,7 +176,7 @@ div dl{
 #curated_playlists section{
     position:relative;
 
-    background-color:#04579c;
+    background-color:#080c86;
     margin: -1em 5px;
     border-radius: 10%;
     align-items: center;
@@ -233,9 +235,35 @@ div dl{
     font-size: 1em;
     height: 40px;
     width: 311px;
-
-    
 }
+    #trending ::-webkit-scrollbar {
+        background: #7c7fac;
+
+    }
+    #trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+    }
+    #trending ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+    }
+    #trending ::-webkit-scrollbar-thumb:hover {
+    background: #020659;
+    }
+    #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+    }
+    #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+    }
+    #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+        background:#020659;
+        border-radius: 5px;
+    }
+    #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+    
 div {
     color: #590242;
     font-size: 1em;
@@ -270,6 +298,7 @@ header{
 }
 footer{
     background-color: #ffffff;
+    padding-top: 40px;
 }
 #trending{
     background-color: #ffffff;
@@ -283,16 +312,19 @@ footer{
 }
 #curated_playlists{
     background-color: #020873;
-    margin-top: 60px;
+    margin-top: 70px;
+    padding-top: 10px;
     }
 #allplaylists{
     background-color: #ffffff;
-    padding-top: 50px;
 }
 /*button display*/  
 .button {
-    display: inline-block;
+   display:inline-flex;
     padding: 10px 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
